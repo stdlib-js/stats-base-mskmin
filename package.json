@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-mskmin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Calculate the minimum value of a strided array according to a mask.",
   "license": "Apache-2.0",
   "author": {

@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/stats-base-mskmin",
+  "version": "0.0.0",
+  "description": "Calculate the minimum value of a strided array according to a mask.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-base-mskmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "minimum",
+    "min",
+    "range",
+    "extremes",
+    "domain",
+    "extent",
+    "strided",
+    "strided array",
+    "masked",
+    "mask",
+    "masked array",
+    "typed",
+    "array"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}

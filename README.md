@@ -41,32 +41,14 @@ limitations under the License.
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-mskmin
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var mskmin = require( '@stdlib/stats-base-mskmin' );
+import mskmin from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-mskmin@esm/index.mjs';
 ```
 
 #### mskmin( N, x, strideX, mask, strideMask )
@@ -92,7 +74,7 @@ The function has the following parameters:
 The `N` and `stride` parameters determine which elements are accessed at runtime. For example, to compute the minimum value of every other element in `x`,
 
 ```javascript
-var floor = require( '@stdlib/math-base-special-floor' );
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 
 var x = [ 1.0, 2.0, -7.0, -2.0, 4.0, 3.0, -5.0, -6.0 ];
 var mask = [ 0, 0, 0, 0, 0, 0, 1, 1 ];
@@ -107,9 +89,9 @@ Note that indexing is relative to the first index. To introduce offsets, use [`t
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-var Float64Array = require( '@stdlib/array-float64' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var floor = require( '@stdlib/math-base-special-floor' );
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 
 var x0 = new Float64Array( [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
@@ -143,7 +125,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offset` parameter supports indexing semantics based on a starting index. For example, to calculate the minimum value for every other value in `x` starting from the second value
 
 ```javascript
-var floor = require( '@stdlib/math-base-special-floor' );
+import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 
 var x = [ 2.0, 1.0, -2.0, -2.0, 3.0, 4.0, -5.0, -6.0 ];
 var mask = [ 0, 0, 0, 0, 0, 0, 1, 1 ];
@@ -174,12 +156,17 @@ var v = mskmin.ndarray( N, x, 2, 1, mask, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var Float64Array = require( '@stdlib/array-float64' );
-var Uint8Array = require( '@stdlib/array-uint8' );
-var mskmin = require( '@stdlib/stats-base-mskmin' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
+import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+import mskmin from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-mskmin@esm/index.mjs';
 
 var mask;
 var x;
@@ -200,6 +187,10 @@ console.log( mask );
 
 var v = mskmin( x.length, x, 1, mask, 1 );
 console.log( v );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -233,7 +224,7 @@ console.log( v );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -302,15 +293,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dmskmin]: https://github.com/stdlib-js/stats-base-dmskmin
+[@stdlib/stats/base/dmskmin]: https://github.com/stdlib-js/stats-base-dmskmin/tree/esm
 
-[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min
+[@stdlib/stats/base/min]: https://github.com/stdlib-js/stats-base-min/tree/esm
 
-[@stdlib/stats/base/mskmax]: https://github.com/stdlib-js/stats-base-mskmax
+[@stdlib/stats/base/mskmax]: https://github.com/stdlib-js/stats-base-mskmax/tree/esm
 
-[@stdlib/stats/base/nanmin]: https://github.com/stdlib-js/stats-base-nanmin
+[@stdlib/stats/base/nanmin]: https://github.com/stdlib-js/stats-base-nanmin/tree/esm
 
-[@stdlib/stats/base/smskmin]: https://github.com/stdlib-js/stats-base-smskmin
+[@stdlib/stats/base/smskmin]: https://github.com/stdlib-js/stats-base-smskmin/tree/esm
 
 <!-- </related-links> -->
 

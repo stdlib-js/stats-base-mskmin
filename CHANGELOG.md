@@ -2,6 +2,51 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-02-25)
+
+<section class="features">
+
+### Features
+
+-   [`3033968`](https://github.com/stdlib-js/stdlib/commit/30339687c8fc8a07a4bc593ee539135e54a25e04) - add support for accessor arrays and refactor `stats/base/mskmin` [(#5420)](https://github.com/stdlib-js/stdlib/pull/5420)
+
+</section>
+
+<!-- /.features -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`3033968`](https://github.com/stdlib-js/stdlib/commit/30339687c8fc8a07a4bc593ee539135e54a25e04) - **feat:** add support for accessor arrays and refactor `stats/base/mskmin` [(#5420)](https://github.com/stdlib-js/stdlib/pull/5420) _(by Vivek Maurya, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Vivek Maurya
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)

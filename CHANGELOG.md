@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-25)
+## Unreleased (2025-03-29)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`d366753`](https://github.com/stdlib-js/stdlib/commit/d3667537bc5a0f181f01b32f8245ecfc05d46d84) - **refactor:** update paths _(by Aayush Khanna)_
 -   [`3033968`](https://github.com/stdlib-js/stdlib/commit/30339687c8fc8a07a4bc593ee539135e54a25e04) - **feat:** add support for accessor arrays and refactor `stats/base/mskmin` [(#5420)](https://github.com/stdlib-js/stdlib/pull/5420) _(by Vivek Maurya, Athan Reines)_
 
 </details>
@@ -34,8 +35,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Aayush Khanna
 -   Athan Reines
 -   Vivek Maurya
 
